@@ -1,0 +1,500 @@
+{
+  "header" : {
+    "dataModelVersion" : "2"
+  },
+  "content" : {
+    "comments" : "",
+    "componentType" : "PROCESS_GROUP",
+    "connections" : [ {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "fd4754c2-0165-1000-0000-0000678cd702",
+        "id" : "1cecc59d-8918-3f97-b4b7-a68ae31df66a",
+        "name" : "PutFile",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "8b783f78-e992-3e32-bd98-7a96bfbbc233",
+      "identifier" : "cfd8b284-9b0b-3000-932d-06edb2fd8058",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "fd4754c2-0165-1000-0000-0000678cd702",
+        "id" : "f1fc1787-4057-3644-8afc-14c3278b3507",
+        "name" : "ConsumeJMS",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ {
+        "x" : 677.0,
+        "y" : 341.9432067871094
+      }, {
+        "x" : 677.0,
+        "y" : 391.9432067871094
+      } ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "fd4754c2-0165-1000-0000-0000678cd702",
+        "id" : "b5606884-b9e3-3889-932c-99f9f41c7564",
+        "name" : "PublishJMS",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "8b783f78-e992-3e32-bd98-7a96bfbbc233",
+      "identifier" : "2812915f-46ce-34de-bccf-2227696ad069",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "fd4754c2-0165-1000-0000-0000678cd702",
+        "id" : "b5606884-b9e3-3889-932c-99f9f41c7564",
+        "name" : "PublishJMS",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ {
+        "x" : 1261.0,
+        "y" : 341.936279296875
+      }, {
+        "x" : 1261.0,
+        "y" : 391.936279296875
+      } ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "fd4754c2-0165-1000-0000-0000678cd702",
+        "id" : "1cecc59d-8918-3f97-b4b7-a68ae31df66a",
+        "name" : "PutFile",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "8b783f78-e992-3e32-bd98-7a96bfbbc233",
+      "identifier" : "6d31b9ff-4aa6-3944-9f93-6748913708ab",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "fd4754c2-0165-1000-0000-0000678cd702",
+        "id" : "1cecc59d-8918-3f97-b4b7-a68ae31df66a",
+        "name" : "PutFile",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "fd4754c2-0165-1000-0000-0000678cd702",
+        "id" : "b5606884-b9e3-3889-932c-99f9f41c7564",
+        "name" : "PublishJMS",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "8b783f78-e992-3e32-bd98-7a96bfbbc233",
+      "identifier" : "4650e392-1da4-3835-b1c9-b24ef4de7a67",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "fd4754c2-0165-1000-0000-0000678cd702",
+        "id" : "07c3b25a-71c1-3bb8-a14c-d1eeba59ac4e",
+        "name" : "GenerateFlowFile",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    } ],
+    "controllerServices" : [ ],
+    "funnels" : [ ],
+    "identifier" : "8b783f78-e992-3e32-bd98-7a96bfbbc233",
+    "inputPorts" : [ ],
+    "labels" : [ ],
+    "name" : "NiFi_Solace_Git_test",
+    "outputPorts" : [ ],
+    "position" : {
+      "x" : 680.3771501498883,
+      "y" : 300.2530084443485
+    },
+    "processGroups" : [ ],
+    "processors" : [ {
+      "autoTerminatedRelationships" : [ ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.0.3.2.0.0-520"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "8b783f78-e992-3e32-bd98-7a96bfbbc233",
+      "identifier" : "07c3b25a-71c1-3bb8-a14c-d1eeba59ac4e",
+      "name" : "GenerateFlowFile",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 224.0,
+        "y" : 35.0
+      },
+      "properties" : {
+        "character-set" : "UTF-8",
+        "File Size" : "0B",
+        "generate-ff-custom-text" : "\"This is test for NiFi-Solace Connection\"",
+        "Batch Size" : "1",
+        "Unique FlowFiles" : "false",
+        "Data Format" : "Text"
+      },
+      "propertyDescriptors" : {
+        "character-set" : {
+          "displayName" : "Character Set",
+          "identifiesControllerService" : false,
+          "name" : "character-set",
+          "sensitive" : false
+        },
+        "File Size" : {
+          "displayName" : "File Size",
+          "identifiesControllerService" : false,
+          "name" : "File Size",
+          "sensitive" : false
+        },
+        "generate-ff-custom-text" : {
+          "displayName" : "Custom Text",
+          "identifiesControllerService" : false,
+          "name" : "generate-ff-custom-text",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Unique FlowFiles" : {
+          "displayName" : "Unique FlowFiles",
+          "identifiesControllerService" : false,
+          "name" : "Unique FlowFiles",
+          "sensitive" : false
+        },
+        "Data Format" : {
+          "displayName" : "Data Format",
+          "identifiesControllerService" : false,
+          "name" : "Data Format",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "3 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
+      "yieldDuration" : "2 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-jms-processors-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.0.3.2.0.0-520"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "8b783f78-e992-3e32-bd98-7a96bfbbc233",
+      "identifier" : "f1fc1787-4057-3644-8afc-14c3278b3507",
+      "name" : "ConsumeJMS",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 806.0,
+        "y" : 24.0
+      },
+      "properties" : {
+        "character-set" : "UTF-8",
+        "User Name" : "default",
+        "Shared subscription" : "false",
+        "Destination Name" : "Test_NiFi",
+        "Session Cache size" : "1",
+        "Destination Type" : "QUEUE",
+        "Acknowledgement Mode" : "2",
+        "Durable subscription" : "false",
+        "Connection Factory Service" : "9138d744-8972-3e25-b46a-813198b4c443"
+      },
+      "propertyDescriptors" : {
+        "character-set" : {
+          "displayName" : "Character Set",
+          "identifiesControllerService" : false,
+          "name" : "character-set",
+          "sensitive" : false
+        },
+        "User Name" : {
+          "displayName" : "User Name",
+          "identifiesControllerService" : false,
+          "name" : "User Name",
+          "sensitive" : false
+        },
+        "Connection Client ID" : {
+          "displayName" : "Connection Client ID",
+          "identifiesControllerService" : false,
+          "name" : "Connection Client ID",
+          "sensitive" : false
+        },
+        "Shared subscription" : {
+          "displayName" : "Shared subscription",
+          "identifiesControllerService" : false,
+          "name" : "Shared subscription",
+          "sensitive" : false
+        },
+        "Destination Name" : {
+          "displayName" : "Destination Name",
+          "identifiesControllerService" : false,
+          "name" : "Destination Name",
+          "sensitive" : false
+        },
+        "Session Cache size" : {
+          "displayName" : "Session Cache size",
+          "identifiesControllerService" : false,
+          "name" : "Session Cache size",
+          "sensitive" : false
+        },
+        "Destination Type" : {
+          "displayName" : "Destination Type",
+          "identifiesControllerService" : false,
+          "name" : "Destination Type",
+          "sensitive" : false
+        },
+        "Acknowledgement Mode" : {
+          "displayName" : "Acknowledgement Mode",
+          "identifiesControllerService" : false,
+          "name" : "Acknowledgement Mode",
+          "sensitive" : false
+        },
+        "Durable subscription" : {
+          "displayName" : "Durable subscription",
+          "identifiesControllerService" : false,
+          "name" : "Durable subscription",
+          "sensitive" : false
+        },
+        "Connection Factory Service" : {
+          "displayName" : "Connection Factory Service",
+          "identifiesControllerService" : true,
+          "name" : "Connection Factory Service",
+          "sensitive" : false
+        },
+        "Password" : {
+          "displayName" : "Password",
+          "identifiesControllerService" : false,
+          "name" : "Password",
+          "sensitive" : false
+        },
+        "Subscription Name" : {
+          "displayName" : "Subscription Name",
+          "identifiesControllerService" : false,
+          "name" : "Subscription Name",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.jms.processors.ConsumeJMS",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "success" ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.0.3.2.0.0-520"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "8b783f78-e992-3e32-bd98-7a96bfbbc233",
+      "identifier" : "1cecc59d-8918-3f97-b4b7-a68ae31df66a",
+      "name" : "PutFile",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 806.0,
+        "y" : 301.936279296875
+      },
+      "properties" : {
+        "Create Missing Directories" : "true",
+        "Directory" : "/tmp/solace",
+        "Conflict Resolution Strategy" : "fail"
+      },
+      "propertyDescriptors" : {
+        "Group" : {
+          "displayName" : "Group",
+          "identifiesControllerService" : false,
+          "name" : "Group",
+          "sensitive" : false
+        },
+        "Owner" : {
+          "displayName" : "Owner",
+          "identifiesControllerService" : false,
+          "name" : "Owner",
+          "sensitive" : false
+        },
+        "Create Missing Directories" : {
+          "displayName" : "Create Missing Directories",
+          "identifiesControllerService" : false,
+          "name" : "Create Missing Directories",
+          "sensitive" : false
+        },
+        "Permissions" : {
+          "displayName" : "Permissions",
+          "identifiesControllerService" : false,
+          "name" : "Permissions",
+          "sensitive" : false
+        },
+        "Maximum File Count" : {
+          "displayName" : "Maximum File Count",
+          "identifiesControllerService" : false,
+          "name" : "Maximum File Count",
+          "sensitive" : false
+        },
+        "Last Modified Time" : {
+          "displayName" : "Last Modified Time",
+          "identifiesControllerService" : false,
+          "name" : "Last Modified Time",
+          "sensitive" : false
+        },
+        "Directory" : {
+          "displayName" : "Directory",
+          "identifiesControllerService" : false,
+          "name" : "Directory",
+          "sensitive" : false
+        },
+        "Conflict Resolution Strategy" : {
+          "displayName" : "Conflict Resolution Strategy",
+          "identifiesControllerService" : false,
+          "name" : "Conflict Resolution Strategy",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutFile",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "success" ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-jms-processors-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.0.3.2.0.0-520"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "8b783f78-e992-3e32-bd98-7a96bfbbc233",
+      "identifier" : "b5606884-b9e3-3889-932c-99f9f41c7564",
+      "name" : "PublishJMS",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 222.0,
+        "y" : 301.9432067871094
+      },
+      "properties" : {
+        "character-set" : "UTF-8",
+        "User Name" : "default",
+        "Destination Name" : "Test_NiFi",
+        "Session Cache size" : "1",
+        "Destination Type" : "QUEUE",
+        "message-body-type" : "bytes",
+        "Connection Factory Service" : "075cedbc-1ccd-33b4-971e-93fc6004d94b"
+      },
+      "propertyDescriptors" : {
+        "character-set" : {
+          "displayName" : "Character Set",
+          "identifiesControllerService" : false,
+          "name" : "character-set",
+          "sensitive" : false
+        },
+        "User Name" : {
+          "displayName" : "User Name",
+          "identifiesControllerService" : false,
+          "name" : "User Name",
+          "sensitive" : false
+        },
+        "Connection Client ID" : {
+          "displayName" : "Connection Client ID",
+          "identifiesControllerService" : false,
+          "name" : "Connection Client ID",
+          "sensitive" : false
+        },
+        "Destination Name" : {
+          "displayName" : "Destination Name",
+          "identifiesControllerService" : false,
+          "name" : "Destination Name",
+          "sensitive" : false
+        },
+        "Session Cache size" : {
+          "displayName" : "Session Cache size",
+          "identifiesControllerService" : false,
+          "name" : "Session Cache size",
+          "sensitive" : false
+        },
+        "Destination Type" : {
+          "displayName" : "Destination Type",
+          "identifiesControllerService" : false,
+          "name" : "Destination Type",
+          "sensitive" : false
+        },
+        "message-body-type" : {
+          "displayName" : "Message Body Type",
+          "identifiesControllerService" : false,
+          "name" : "message-body-type",
+          "sensitive" : false
+        },
+        "Connection Factory Service" : {
+          "displayName" : "Connection Factory Service",
+          "identifiesControllerService" : true,
+          "name" : "Connection Factory Service",
+          "sensitive" : false
+        },
+        "Password" : {
+          "displayName" : "Password",
+          "identifiesControllerService" : false,
+          "name" : "Password",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "1 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.jms.processors.PublishJMS",
+      "yieldDuration" : "4 sec"
+    } ],
+    "remoteProcessGroups" : [ ],
+    "variables" : { }
+  }
+}
