@@ -36,11 +36,11 @@
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
       "bends" : [ {
-        "x" : 677.0,
-        "y" : 341.9432067871094
+        "x" : 636.0,
+        "y" : 438.9432067871094
       }, {
-        "x" : 677.0,
-        "y" : 391.9432067871094
+        "x" : 636.0,
+        "y" : 488.9432067871094
       } ],
       "componentType" : "CONNECTION",
       "destination" : {
@@ -155,8 +155,8 @@
       "name" : "GenerateFlowFile",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 224.0,
-        "y" : 35.0
+        "x" : 339.0,
+        "y" : -13.0
       },
       "properties" : {
         "character-set" : "UTF-8",
@@ -239,7 +239,7 @@
         "Destination Type" : "QUEUE",
         "Acknowledgement Mode" : "2",
         "Durable subscription" : "false",
-        "Connection Factory Service" : "9138d744-8972-3e25-b46a-813198b4c443"
+        "Connection Factory Service" : "075cedbc-1ccd-33b4-971e-93fc6004d94b"
       },
       "propertyDescriptors" : {
         "character-set" : {
@@ -419,8 +419,8 @@
       "name" : "PublishJMS",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 222.0,
-        "y" : 301.9432067871094
+        "x" : 181.0,
+        "y" : 398.9432067871094
       },
       "properties" : {
         "character-set" : "UTF-8",
@@ -492,7 +492,7 @@
       "schedulingStrategy" : "TIMER_DRIVEN",
       "style" : { },
       "type" : "org.apache.nifi.jms.processors.PublishJMS",
-      "yieldDuration" : "4 sec"
+      "yieldDuration" : "3 sec"
     } ],
     "remoteProcessGroups" : [ ],
     "variables" : { }
